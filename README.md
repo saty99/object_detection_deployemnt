@@ -11,7 +11,7 @@
 
 ##Deployemnt over AWS EC2 instance using Docker to contanerize the app
 
-![](images/image4.png)
+![](images/Image4.png)
 
 - Create an AWS EC2 intance
 - Intall Docker on it
@@ -23,6 +23,6 @@
 - Push docker image to ECR
 - Run python app in Docker container
 
-![](images/image1.png)
-![](images/image2.png)
-![](images/image3.png)
+![](images/Image1.png)
+![](images/Image2.png)
+![](images/Image3.png)
