@@ -1,7 +1,28 @@
-# Obeject detection usin YoloV3 and deployment uisng fast api over AWS EC2 instance
+# Obeject detection usin YoloV3 and deployment uisng fast api and docker over AWS EC2 instance
 
-<img src="https://github.com/saty99/Deep Q-Network OpenAI's Gym Cart and Pole Environment/blob/master/Image1.jpg"/>
+![](images/apples.jpg)
 
-## Problem
-- The cart and pole problem consists of a cart that can move left and right along a frictionless track. The cart has a pole attached to the top of it, which starts out in a vertical upright position, however, by design, the pole will fall either to the left or right when not balanced. The goal here is to prevent this pole from falling over. A reward of +1 will be given for each time step that the pole remains upright, and an episode will deemed over when the pole is more than 15 degrees from vertical or when the cart moves more than  2.4 units from the center of the screen. (Link: https://gym.openai.com/envs/CartPole-v0/)
 
+-Created an object detection model using yoloV3
+-Used FastApi for deployment of the model
+-When talking about deploying, what is usually meant is to put all of the software required for predicting in a server. By doing this, a client can interact with the model by sending requests to the server.
+-The API was coded using fastAPI but the serving was done using uvicorn, which is a really fast Asynchronous Server Gateway Interface (ASGI) implementation.  
+-With fastAPI you can create web servers to host your models very easily. Additionally, this platform is extremely fast and it has a built-in client that can be used to interact with the server. 
+
+##Deployemnt over AWS EC2 instance using Docker to contanerize the app
+
+![](images/image4.png)
+
+-Create an AWS EC2 intance
+-Intall Docker on it
+-Create a Repository in AWS ECR
+-Create an IAM role with ContainerRegistryFullAccess
+-Assign the role to EC2 instance
+-Download pythonApp from Github.
+-Build docker image for the Python App
+-Push docker image to ECR
+7. Run python app in Docker container
+
+![](images/image1.png)
+![](images/image2.png)
+![](images/image3.png)
