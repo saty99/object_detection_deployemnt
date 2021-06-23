@@ -9,7 +9,7 @@
 - The API was coded using fastAPI but the serving was done using uvicorn, which is a really fast Asynchronous Server Gateway Interface (ASGI) implementation.  
 - With fastAPI you can create web servers to host your models very easily. Additionally, this platform is extremely fast and it has a built-in client that can be used to interact with the server. 
 
-##Deployemnt over AWS EC2 instance using Docker to contanerize the app
+## Deployemnt over AWS EC2 instance using Docker to contanerize the app
 
 ![](images/Image4.png)
 
